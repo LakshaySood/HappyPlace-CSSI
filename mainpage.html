@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HappyPlace</title>
+  </head>
+  <body>
+    <form method = POST action = "/results.html">
+      <h1>Welcome to HappyPlace!</h1>
+      <p>Helping <i> everyone </i> find their happy place.</p>
+      <br>
+      <h2>Finding your Happy Place is as easy as 1 - 2 - 3!</h2>
+        <div>
+          <b>Step 1: </b>
+          <br>
+          <p> How old are you? </p>
+            <input type = "radio" name = "age" value = "Under 18" checked> Under 18 <br>
+            <input type = "radio" name = "age" value = "Between 18 and 21"> Between 18 and 21 <br>
+            <input type = "radio" name = "age" value = "Over 21"> Over 21
+        </div>
+        <br>
+        <div>
+          <b>Step 2: </b>
+          <br>
+          <p> How far would you like to travel? </p>
+            <input type = "radio" name = "distance" value = "1 mile" checked> 1 mile<br>
+            <input type = "radio" name = "distance" value = "10 miles"> 10 miles<br>
+            <input type = "radio" name = "distance" value = "30 miles"> 30 miles
+        </div>
+        <br>
+        <div>
+          <b>Step 3: </b>
+          <br>
+          <p> How are you traveling? </p>
+            <input type = "radio" name = "mode of travel" value = "walking" checked> Walking<br>
+            <input type = "radio" name = "mode of travel" value = "biking"> Biking<br>
+            <input type = "radio" name = "mode of travel" value = "car"> Car<br>
+            <!-- The point here is that we want the user to select their mode of travel and this selection will be used to interact with google maps API
+            to figure out which mode of travel is optimal, but we could also just have the user pick their mode of travel on the API itself and come up with
+            a third parameter to use here -->
+          <br>
+          <input type = "submit" value = "Submit">
+        </div>
+        <br>
+    </form>
+  </body>
+</html>
